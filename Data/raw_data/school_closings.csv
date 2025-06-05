@@ -1,0 +1,48 @@
+SCHOOL_ID,SCHOOL_NM,SCH_ADDR,GRADE_CAT,GRADES,SCH_TYPE,X,Y,Name2,Status13,W_FROM_C,C_TO_W
+"610,031",LAFAYETTE,"2714 W AUGUSTA BLVD, 60622",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.69,41.9,LAFAYETTE,Closed,,CHOPIN
+"610,160",SONGHAI,"11725 S PERRY AVE, 60628",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.63,41.68,SONGHAI,Closed,,CURTIS
+"610,045",LAWRENCE,"9928 S CRANDON AVE, 60617",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.57,41.71,LAWRENCE,Closed,,BURNHAM
+"610,187",STEWART,"4525 N KENMORE AVE, 60640",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.66,41.96,STEWART,Closed,,BRENNEMANN
+"610,241",MARCONI,"230 N KOLMAR AVE, 60624",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.74,41.88,MARCONI,Closed,,TILTON
+"610,058",MAY,"512 S LAVERGNE AVE, 60644",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.75,41.87,MAY,Closed,,LELAND
+"610,061",MAYO,"249 E 37TH ST, 60653",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.62,41.83,MAYO,Closed,,"WELLS, I"
+"610,072",MORGAN,"8407 S KERFOOT AVE, 60620",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.64,41.74,MORGAN,Closed,,RYDER
+"610,085",NEAR NORTH,"739 N ADA ST, 60642",ES,"2, 3, 4, 5, 6, 7, 8","District, Special Ed.",-87.66,41.9,NEAR NORTH,Closed,,MONTEFIORE
+"610,189",STOCKTON,"4420 N BEACON ST, 60640",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.66,41.96,STOCKTON,Closed,,COURTENAY
+"610,277",OVERTON,"221 E 49TH ST, 60615",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.62,41.81,OVERTON,Closed,,MOLLISON
+"609,932",OWENS,"12450 S STATE ST, 60628",ES,"PK, K, 1, 2, 3, 4","District, non-alternative",-87.62,41.67,OWENS,Closed,,GOMPERS
+"610,273",PADEREWSKI,"2221 S LAWNDALE AVE, 60623",ES,"K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.72,41.85,PADEREWSKI,Closed,,"CARDENAS, CASTELLANOA"
+"610,114",PARKMAN,"245 W 51ST ST, 60609",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.63,41.8,PARKMAN,Closed,,SHERWOOD
+"610,119",PEABODY,"1444 W AUGUSTA BLVD, 60642",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.66,41.9,PEABODY,Closed,,OTIS
+"610,395",PERSHING MIDDLE,"3200 S CALUMET AVE, 60616",MS,"4, 5, 6, 7, 8","District, non-alternative",-87.62,41.84,PERSHING WEST,Closed,,PERSHING EAST
+"610,134",POPE,"1852 S ALBANY AVE, 60623",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.7,41.86,POPE,Closed,,JOHNSON
+"610,150",ROSS,"6059 S WABASH AVE, 60637",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.62,41.78,ROSS,Closed,,DULLES
+"610,154",RYERSON,"646 N LAWNDALE AVE, 60624",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.72,41.89,RYERSON,Closed,,"WARD, L"
+"610,169",SEXTON,"6020 S LANGLEY AVE, 60637",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.61,41.79,SEXTON,Closed,,FISKE
+"609,881",DELANO,"3937 W WILCOX ST, 60624",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.72,41.88,DELANO,Closed,,MELODY
+"610,266",DUMAS TECH ACAD,"6650 S ELLIS AVE, 60637",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.6,41.77,DUMAS TECH ACAD,Closed,,WADSWORTH
+"610,320",DUPREY,"2620 W HIRSCH ST, 60622",ES,"K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.69,41.91,DUPREY,Closed,,DIEGO
+"609,906",EMMET,"5500 W MADISON ST, 60644",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.76,41.88,EMMET,Closed,,"DE PRIEST, ELLINGTON"
+"609,916",FERMI,"1415 E 70TH ST, 60637",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.59,41.77,FERMI,Closed,,SOUTHSHORE
+"609,775",ALTGELD,"1340 W 71ST ST, 60636",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.66,41.77,ALTGELD,Closed,,WENTWORTH
+"610,156","ARMSTRONG, L","5345 W CONGRESS PKWY, 60644",ES,"3, 4, 5, 6","District, non-alternative",-87.76,41.87,"ARMSTRONG, L",Closed,,LELAND
+"610,265",BANNEKER,"6656 S NORMAL BLVD, 60621",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.64,41.77,BANNEKER,Closed,,MAYS
+"610,365",BETHUNE,"3030 W ARTHINGTON ST, 60612",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.7,41.87,BETHUNE,Closed,,GREGORY
+"610,161",BONTEMPS,"1241 W 58TH ST, 60636",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.66,41.79,BONTEMPS,Closed,,NICHOLSON TECH ACAD
+"610,280",BUCKINGHAM,"9207 S PHILLIPS AVE, 60617",ES,"2, 3, 4, 5, 6, 7, 8","District, Special Ed.",-87.56,41.73,BUCKINGHAM,Closed,,MONTEFIORE
+"610,243",CALHOUN,"2833 W ADAMS ST, 60612",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.7,41.88,CALHOUN,Closed,,CATHER
+"610,205",TRUMBULL,"5200 N ASHLAND AVE, 60640",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.67,41.98,TRUMBULL,Closed,,"CHAPPELL, MCCUTCHEON, MCPHERSON"
+"610,210",VON HUMBOLDT,"2620 W HIRSCH ST, 60622",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.69,41.91,VON HUMBOLDT,Closed,,DIEGO
+"610,224",WEST PULLMAN,"11941 S PARNELL AVE, 60628",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.64,41.68,WEST PULLMAN,Closed,,HALEY
+"610,336",WILIAMS MIDDLE,"2710 S DEARBORN ST, 60616",MS,"6, 7, 2008","District, non-alternative",-87.63,41.84,WILIAMS MIDDLE,Closed,,DRAKE
+"610,232",WILLIAMS ES,"2710 S DEARBORN ST, 60616",ES,"PK, K, 1, 2, 3, 4, 5","District, non-alternative",-87.63,41.84,WILLIAMS ES,Closed,,DRAKE
+"610,285",WOODS,"6206 S RACINE AVE, 60636",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.65,41.78,WOODS,Closed,,BASS
+"610,233",YALE,"7025 S PRINCETON AVE, 60621",ES,"K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.63,41.77,YALE,Closed,,HARVARD
+"400,095",GARFIELD PARK,"3250 W MONROE ST, 60624",ES,"K, 1, 2, 3, 4, 5, 6","District, non-alternative",-87.71,41.88,GARFIELD PARK,Closed,,FARADAY
+"610,348",GOLDBLATT,"4257 W ADAMS ST, 60624",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.73,41.88,GOLDBLATT,Closed,,HEFFERAN
+"609,913",GOODLOW,"2040 W 62ND ST, 60636",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.68,41.78,GOODLOW,Closed,,EARLE
+"610,240",HENSON,"1326 S AVERS AVE, 60623",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.72,41.86,HENSON,Closed,,"HUGHES, C"
+"609,989",HERBERT,"2131 W MONROE ST, 60612",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.68,41.88,HERBERT,Closed,,DETT
+"610,020",KEY,"517 N PARKSIDE AVE, 60644",ES,"K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.77,41.89,KEY,Closed,,ELLINGTON
+"610,023",KING,"740 S CAMPBELL AVE, 60612",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.69,41.87,KING,Closed,,JENSEN
+"610,028",KOHN,"10414 S STATE ST, 60628",ES,"PK, K, 1, 2, 3, 4, 5, 6, 7, 8","District, non-alternative",-87.62,41.7,KOHN,Closed,,"CULLEN, HUGHES L, LAVIZZO"
