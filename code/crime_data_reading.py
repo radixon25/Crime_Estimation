@@ -48,4 +48,3 @@ print(f"Unique locations with crimes at schools: {len(unique_locations)}")
 
 # 7) Save the filtered DataFrame to a new parquet file if needed
 crime_at_schools.to_parquet("Data/processed/crime_at_schools.parquet", index=False)
-crime_at_schools["date"].describe(datetime_is_numeric=True)
