@@ -4,8 +4,14 @@ url: "https://Radixon25.github.io"
 baseurl: "/Crime_Estimation" # Matches repo name
 repository: "Radixon25/Crime_Estimation"
 
-# Theme settings
-theme: minimal-mistakes-jekyll
+exclude:
+  - docs/_posts
+  - test/_posts
+  - _posts
+
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-include-cache
 
 # Author details (optional)
 author:
