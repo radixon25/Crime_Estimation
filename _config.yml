@@ -5,9 +5,11 @@ baseurl: "/Crime_Estimation" # Matches repo name
 repository: "Radixon25/Crime_Estimation"
 
 exclude:
-  - docs/_posts
-  - test/_posts
   - _posts
+  - docs
+  - test
+  - vendor
+  - README.md
 
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
