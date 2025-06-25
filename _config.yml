@@ -1,0 +1,19 @@
+title: Chicago Crime Analysis
+description: "Evaluating the impacts of Chicago Public School closures on school-related crime."
+url: "https://Radixon25.github.io"
+baseurl: "/Crime_Estimation" # Matches repo name
+repository: "Radixon25/Crime_Estimation"
+
+# Theme settings
+theme: minimal-mistakes-jekyll
+
+# SEO & Analytics (optional)
+google_analytics: # Add your GA ID here later
+
+# Author details (optional)
+author:
+  name   : "Rashad Dixon"
+  avatar : "/assets/images/profile.jpg"
+  bio    : "Researcher focused on urban policy and causal inference."
+  location: "Chicago, IL"
+  github : "Radixon25"
