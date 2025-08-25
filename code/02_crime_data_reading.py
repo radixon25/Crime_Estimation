@@ -1,4 +1,19 @@
-#  - Example using Dask DataFrame:
+"""
+crime_data_reading.py
+
+Reads and filters crime data parquet chunks to extract incidents occurring at schools.
+
+Inputs:
+    Data/processed/crime_parquet/chunk_*.parquet : Parquet files with crime data
+
+Outputs:
+    Data/processed/crime_at_schools.parquet      : Parquet file with crimes at school locations
+
+Assumptions:
+    - Each parquet chunk contains columns: id, date, primary_type, location_description, ward, latitude, longitude.
+    - "School" appears in the location_description for relevant incidents.
+"""
+
 import dask.dataframe as dd
 import glob
 import pandas as pd
@@ -7,7 +22,6 @@ import pandas as pd
 PARQUET_DIR = "Data/processed/crime_parquet/"
 
 # 2) Use glob to list all chunk files
-#    (adjust the pattern if your filenames are different)
 all_paths = glob.glob(PARQUET_DIR + "chunk_*.parquet")
 
 # 3) Prepare a list to collect filtered DataFrames

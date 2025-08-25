@@ -1,3 +1,19 @@
+"""
+crime_data_cleaning.py
+
+Streams and processes the Chicago Crime dataset from Socrata, saving it in Parquet chunks for efficient downstream analysis.
+
+Inputs:
+    Chicago Crime API (Socrata, resource_id="ijzp-q8t2")
+
+Outputs:
+    Data/processed/crime_parquet/chunk_*.parquet : Parquet files with selected columns and cleaned types
+
+Assumptions:
+    - Environment variables for Socrata credentials are set in a .env file.
+    - Only selected columns are kept for downstream use.
+"""
+
 # Initialize Python Packages
 import pandas as pd
 import numpy as np
@@ -10,16 +26,14 @@ import pyarrow
 import dask.dataframe as dd
 
 
-# Load environment variables from .env
+# ── Load environment variables ──────────────────────────────────────────────
 load_dotenv()
-
-# Access them using os.getenv
 MyAppToken = os.getenv("MY_APP_TOKEN")
 username = os.getenv("CHICAGO_USERNAME")
 password = os.getenv("CHICAGO_PASSWORD")
 
 
-# ── 3) Set up an authenticated Socrata client ────────────────────────────────────────
+# ── Set up authenticated Socrata client ────────────────────────────────────
 client = Socrata(
     "data.cityofchicago.org",
     app_token=MyAppToken,
@@ -28,11 +42,10 @@ client = Socrata(
     timeout=240
 )
 
-# ── 4) Stream the large “Chicago Crime” dataset in chunks ─────────────────────────────
-
-resource_id = "ijzp-q8t2"   # Chicago’s Crime resource identifier
-batch_size  = 100_000       # pull 100k rows at a time
-offset      = 0
+# ── Stream and process the Chicago Crime dataset ────────────────────────────
+resource_id = "ijzp-q8t2"
+batch_size = 100_000
+offset = 0
 chunk_index = 0
 
 # Make sure the output folder exists
@@ -49,43 +62,43 @@ while True:
     df_chunk = pd.DataFrame.from_records(results)
     print(f"Chunk {chunk_index}: fetched {len(df_chunk)} rows (offset {offset}).")
 
-    # 4c) Immediately prune / recast dtypes to shrink memory footprint:
+    # 4c) get variable types for documentation
+    print(f"Chunk {chunk_index} variable types:")
+    print(df_chunk.dtypes)
 
-    #  - Keep only the columns you know you’ll need downstream.
-    #    (For example, if you only care about ward/date/type/etc, drop the rest.)
+    # Keep only columns needed downstream
     desired_cols = [
         "id", "case_number", "date", "location_description",
-        "arrest","primary_type", "description","fbi_code","iucr",
-        "beat", "ward",  "year", "latitude", "longitude"
+        "arrest", "primary_type", "description", "fbi_code", "iucr",
+        "beat", "ward", "year", "latitude", "longitude"
     ]
-    # Remove any names not actually present in df_chunk
     keep_cols = [c for c in desired_cols if c in df_chunk.columns]
     df_chunk = df_chunk[keep_cols]
 
-    #  - Convert string booleans ("true"/"false") to pandas BooleanDtype
+    # Convert string booleans to pandas BooleanDtype
     if "arrest" in df_chunk.columns:
         df_chunk["arrest"] = df_chunk["arrest"].map({"true": True, "false": False}).astype("boolean")
     if "domestic" in df_chunk.columns:
         df_chunk["domestic"] = df_chunk["domestic"].map({"true": True, "false": False}).astype("boolean")
 
-    #  - Cast low-cardinality string fields to 'category'
+    # Cast low-cardinality string fields to 'category'
     for cat_col in ["primary_type", "fbi_code", "location_description"]:
         if cat_col in df_chunk.columns:
             df_chunk[cat_col] = df_chunk[cat_col].astype("category")
 
-    #  - Parse the date column once into datetime64[ns, UTC]
+    # Parse the date column
     if "date" in df_chunk.columns:
         df_chunk["date"] = pd.to_datetime(df_chunk["date"], errors="coerce", utc=True)
 
-    #  - Downcast numeric columns to the smallest safe type
+    # Downcast numeric columns
     for int_col in ["ward", "community_area", "year", "beat"]:
         if int_col in df_chunk.columns:
             df_chunk[int_col] = pd.to_numeric(df_chunk[int_col], errors="coerce").astype("Int32")
-
     if "latitude" in df_chunk.columns:
         df_chunk["latitude"] = pd.to_numeric(df_chunk["latitude"], errors="coerce").astype("float32")
     if "longitude" in df_chunk.columns:
         df_chunk["longitude"] = pd.to_numeric(df_chunk["longitude"], errors="coerce").astype("float32")
+    # Print the first few rows of the cleaned chunk
 
     # 4d) Write each processed chunk directly to Parquet on disk
     out_path = f"Data/processed/crime_parquet/chunk_{chunk_index:04d}.parquet"
@@ -100,7 +113,12 @@ while True:
         print(f"Final chunk {chunk_index-1} had {len(df_chunk)} rows. Streaming complete.")
         break
 
+# Print the cleaned columnd types for verification
+print(f"Chunk {chunk_index} cleaned column types:")
+print(df_chunk.dtypes)
+
+
+
 print("Finished streaming all crime data chunks to Parquet.")
 
 
-   
